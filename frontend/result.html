@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Result</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>Crop Disease Detection System</header>
+
+<h2>Prediction Result</h2>
+
+<p><b>Crop:</b> <span id="crop"></span></p>
+<p><b>Disease:</b> <span id="disease"></span></p>
+<p><b>Solution:</b> <span id="solution"></span></p>
+
+<a href="home.html">
+  <button>Back to Home</button>
+</a>
+
+<footer>Final Year Major Project</footer>
+
+<script src="script.js"></script>
+<script>
+  document.getElementById("crop").innerText = localStorage.getItem("crop");
+  document.getElementById("disease").innerText = localStorage.getItem("disease");
+  document.getElementById("solution").innerText = localStorage.getItem("solution");
+</script>
+
+</body>
+</html>

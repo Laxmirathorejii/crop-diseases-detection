@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload Image</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>Crop Disease Detection System</header>
+
+<h2>Upload Crop Leaf Image</h2>
+
+<input type="file" id="imageInput" accept="image/*" onchange="previewImage()">
+
+<br><br>
+
+<img id="preview" width="200" style="display:none; border:1px solid #ccc;">
+
+<br><br>
+
+<button onclick="predictDisease()">Predict Disease</button>
+
+<footer>Final Year Major Project</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
