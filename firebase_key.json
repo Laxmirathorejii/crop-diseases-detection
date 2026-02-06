@@ -1,13 +1,1 @@
-{
-  "type": "service_account",
-  "project_id": "cropdiseasesproject",
-  "private_key_id": "e4bd4d9823253565119331b54fc37cf236da4f0a",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC0hXKTidL8DLRn\n81eTuruQVLuU2zt2aFQVn+tyXrnmnGQX4v6nKs0PnTBnCMYbyYLweHtreabvyj10\n5RNKqXz4u/BC9KyKUHe9fydjK/iyLrRlSG+72v/zMbcdqxxRr6mO9GydrgHJv7R+\nzpLVChV2Wfwiosg4k4YMQUs/7ZanGpedG3BofFCC6QdFldJq55fdYTJhSpLIxdFw\nuzBdzeMP9muqvIqrRFBGsXhj8Ka93oUkLH/kwbSdyUesXID8AegH7qHdHgcQ6Dud\nM3v4DVe9fDGMHUwri/vlXah35IVP3nfDtHDcSyFlllsa7iKaaf7h4NCc/dE1syBe\nQc8ehR9dAgMBAAECggEAI22lROthqvHbXiNV5rpZIURf5CD6lIx5JB1UmgeZOHcs\n9bso+yndQNk6rJ3+M2ni9srOfhNL/feVBCIJHTgSPMa1qo5WZnbQaTJRSpdQobek\n09PZiea7IMF7DKmOT0HIZzP1NST3WN70z4Y/Luxhte6HG00TOndJcZJG8G7yiCzN\newE6t0wspdHCF9WSJ5kRgUXmWceBMduMbtZW480TpsJs0e3SdYEQMVMbVnHTngfv\nmSWE6SHfKxdPupTC3l8xDmeaSC/UEm+4hV8JJN7ZXy7vuOPwzqbEuoZpouYMgWDa\nlPQ/HKZgCfrKQLNVymUTHR0MJca1yv4h+M/YjzLCAQKBgQDbOz9c3k8tR37AY9F9\nEA+Kqbe4xaVMRq57DBPpSMXglFnkWZdQsqI2oT11YhDUDWG1kUdwxlMwFYYfpzxA\nF2YEt0ud76aKITTK/GQrv58n4MFS7/1jqE5k0Z4AH2kLmeodlSB2uyXSa7pUJn2s\nk3TyGkaxS01WD5zauXCPcgQyQQKBgQDSzCuoDMQWag+jPiBT+mgXgUxBDGHm+86G\nO9Xv5tDZC/2WPNS6haPHMqnHL6EgHgGJDcHeTWN8MYNPJxJfKel7yNdjT0+ENz0S\n+tzMOL+/Pz8hfUfhdHsGZGATzIbK45YW85E6o5qleE92n8cSWvkUidFt4dBqPJRc\nrGJl8pPuHQKBgCy7PgZ45bbba6VduJTH/iPQ1UfCLCQQF/HLWRS0YIueOWk6ToGM\nsURsSdn1lHFv+YvOhMEh9j9NZPx4Zva8z3gO3kLvbw+oDtmL/fRfON4uIcQGa7E1\n2ikADDkCL7DKStaWYvVW4jS4/l/FKsdXnvj3G415S+JPdTW7uJfML8cBAoGBAJzJ\nYVtAC4UEZBct+Uuc/1kkQXxMYnE0L1smHCywh/w37+iT3EHTboqVwzO02GoUB15S\nDjVzaCCSjzELRZ3khZYdPx7Neb5Ee7enQRzgxLXRq/oTvagSRALwG4n+YO99MUBm\n70knMLoMb0Yy9xVO9t5w14WcJLEv18XKLfHX6HF9AoGBAKfQ5Fc4393/JA7ApapM\n2vdz1dzdaJpGvu0QgOYNOgjg+sMm4YvQweRgDNJJuMyRq86TlkVGIAkq4Yn8EMOg\nLvfP/EQz/odJYEXdkLw9wOwuA88yGFq5NtBtPoOG1Uh310lvD0xCNOAtvt8vnSwq\nf4UDFz0Iwz5IkLKFeM3sqMJM\n-----END PRIVATE KEY-----\n",
-  "client_email": "firebase-adminsdk-fbsvc@cropdiseasesproject.iam.gserviceaccount.com",
-  "client_id": "113460400809828135214",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40cropdiseasesproject.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
-}
+
