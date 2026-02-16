@@ -5,17 +5,25 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="main-header">
   Crop Disease Detection System
 </header>
-
+      <div class="signup-container">
   <div class="box">
     <h2>Create Account</h2>
-    <input type="text" placeholder="Name">
-    <input type="email" placeholder="Email">
+        <p class="subtitle">Create your account to start detecting crop diseases</p>
+    <input type="text" placeholder="Full Name">
+    <input type="email" placeholder="Email Address">
     <input type="password" placeholder="Password">
+     <input type="password" placeholder="Confirm password">
+
     <button onclick="signup()">Signup</button>
-<script src="script.js"></script>
+      <p class="login-link">
+      Already have an account? <a href="index.html">Login</a>
+    </p>
+  </div>
+</div>
+    <script src="script.js"></script>
 
   </div>
 </body>

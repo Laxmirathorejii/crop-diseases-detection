@@ -1,4 +1,3 @@
-// LOGIN FUNCTION (demo)
 function login() {
     alert("Login successful (Demo)");
     window.location.href = "home.html";
@@ -10,46 +9,41 @@ function signup() {
     window.location.href = "index.html";
 }
 
-// IMAGE UPLOAD CHECK
+
+
+
+
 function predictDisease() {
-    let fileInput = document.getElementById("imageInput");
 
-    if (fileInput.files.length === 0) {
-        alert("Please select an image");
-        return;
-    }
+  const fileInput = document.getElementById("imageInput");
 
-    // Demo prediction
-    localStorage.setItem("disease", "Brown Spot");
-    localStorage.setItem("crop", "Rice");
-    localStorage.setItem("solution", "Use recommended fungicide");
+  if (!fileInput.files.length) {
+    alert("Please select an image first!");
+    return;
+  }
+
+  const file = fileInput.files[0];
+  const reader = new FileReader();
+
+  reader.onload = function(e) {
+
+    // Image ko base64 me save karo
+    localStorage.setItem("selectedImage", e.target.result);
+
+    // Demo data
+    localStorage.setItem("crop", "Tomato");
+    localStorage.setItem("disease", "Leaf Spot");
+    localStorage.setItem("solution", "Apply fungicide and remove infected leaves.");
 
     window.location.href = "result.html";
+  };
+
+  reader.readAsDataURL(file);
 }
 
-// SHOW RESULT ON RESULT PAGE
-function showResult() {
-    document.getElementById("disease").innerText =
-        localStorage.getItem("disease");
 
-    document.getElementById("crop").innerText =
-        localStorage.getItem("crop");
-
-    document.getElementById("solution").innerText =
-        localStorage.getItem("solution");
-}
-function previewImage() {
-    let fileInput = document.getElementById("imageInput");
-    let preview = document.getElementById("preview");
-
-    let file = fileInput.files[0];
-
-    if (file) {
-        let reader = new FileReader();
-        reader.onload = function () {
-            preview.src = reader.result;
-            preview.style.display = "block";
-        };
-        reader.readAsDataURL(file);
-    }
+function logout() {
+  sessionStorage.clear();
+  localStorage.clear();
+  window.location.href = "index.html";
 }

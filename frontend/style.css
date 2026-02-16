@@ -1,15 +1,50 @@
 body {
+ 
   font-family: Arial;
   background: #e8f5e9;
-  text-align: center;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
+  
+
+.container{
+
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 30px;
+}
+.subtitle {
+  font-size: 13px;
+  color: gray;
+  margin-bottom: 20px;
+}
+.login-link {
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+.login-link a {
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: bold;
+}
 .box {
   background: white;
   padding: 20px;
-  width: 300px;
-  margin: 100px auto;
+  width: 400px;
+  margin: 0px auto;
   border-radius: 10px;
+  justify-content: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+
+  
 }
 
 input, button {
@@ -17,21 +52,219 @@ input, button {
   padding: 10px;
   margin: 10px;
 }
-header {
+ header {
   background: #2e7d32;
   color: white;
   padding: 15px;
   text-align: center;
   font-size: 22px;
-}
+} 
+.main-header {
 
-footer {
   background: #2e7d32;
   color: white;
+  /* display: flex;  */
+  align-items: center;
+
+  gap: 15px;
+  padding: 15px;
+}
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+h1{
+ display: flex; 
+  align-items: center;
+   justify-content: center; 
+}
+
+
+.logo {
+  
+ background: none;
+  height: 80px;
+  background: transparent;
+  float: left; 
+  margin-right: 50px; 
+  width: 150px;
+
+
+}
+
+
+.info {
+  font-size: 18px;
+  margin: 10px 40px;
+  line-height: 1.6;
+  text-align: left;
+
+}
+
+.info strong {
+  color: #2e7d32;
+  font-size: 20px;
+}
+
+/* footer { */
+  /* background: #2e7d32; */
+  /* color: white;
   padding: 10px;
   text-align: center;
   position: fixed;
   bottom: 0;
   width: 100%;
   font-size: 14px;
+} */
+/* Make full page height */
+
+
+/* Footer Styling */
+.moving-text {
+  width: 100%;
+  background-color: #2e7d32;
+  color: white;
+  font-size: 35px;        
+  font-weight: 700;
+  padding: 10px 0;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+
+footer {
+  background-color: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+
+.footer-content .line2 {
+  width: 100%;
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px 0;
+  font-size: 30px;   
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.logout-btn {
+  background: white;
+  color: #2e7d32;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 100px;
+  cursor: pointer;
+  font-weight: bold;
+  display: block;
+  margin: 20px auto;   
+  width: fit-content;  
+}
+
+
+.logout-btn:hover {
+  background: #f4f8f4;
+}
+
+/* Home container */
+.home-container {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.subtitle {
+  color: gray;
+  margin-bottom: 30px;
+}
+
+/* Upload Box */
+.upload-box {
+  background: white;
+  padding: 30px;
+  width: 400px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.upload-box input {
+  margin-bottom: 15px;
+}
+
+.upload-box button {
+  width: 100%;
+  padding: 10px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.upload-box button:hover {
+  background: #1b5e20;
+}
+.result-container {
+  padding: 40px;
+  text-align: center;
+}
+
+.result-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  max-width: 900px;
+  margin: auto;
+}
+
+.image-section img {
+  width: 300px;
+  border-radius: 10px;
+  border: 3px solid #2e7d32;
+}
+
+.info-section {
+  text-align: left;
+  max-width: 400px;
+}
+
+.info-section h3 {
+  color: #2e7d32;
+}
+.back-btn {
+  background: white;
+  color: #2e7d32;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 100px;
+  cursor: pointer;
+  font-weight: bold;
+  display: block;
+  margin: 20px auto;   
+  width: fit-content; 
+}
+
+.back-btn:hover {
+  background: #1b5e20;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 15px;
+  background: #f4f8f4;
+  color: gray;
 }

@@ -1,30 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Result</title>
+  <title>Prediction Result</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>Crop Disease Detection System</header>
+<header class="main-header">
+  Crop Disease Detection System
+</header>
 
-<h2>Prediction Result</h2>
+<div class="result-container">
 
-<p><b>Crop:</b> <span id="crop"></span></p>
-<p><b>Disease:</b> <span id="disease"></span></p>
-<p><b>Solution:</b> <span id="solution"></span></p>
+  <h2 class="result-title">Prediction Result</h2>
 
-<a href="home.html">
-  <button>Back to Home</button>
-</a>
+  <div class="result-card">
 
-<footer>Final Year Major Project</footer>
+    <!-- Left Side Image -->
+    <div class="image-section">
+      <img id="showImage" alt="Uploaded Image">
+    </div>
 
-<script src="script.js"></script>
+    <!-- Right Side Information -->
+    <div class="info-section">
+      <h3 id="disease"></h3>
+
+      <p class="description">
+        The uploaded crop leaf image has been analyzed using the AI-based 
+        disease detection model. Based on the visible symptoms and pattern 
+        recognition, the system has identified the disease with high accuracy.
+      </p>
+
+      <p><strong>Crop:</strong> <span id="crop"></span></p>
+      <p><strong>Solution:</strong> <span id="solution"></span></p>
+    </div>
+
+  </div>
+
+  <button class="back-btn" onclick="goHome()">Back to Home</button>
+
+</div>
+
+<footer class="footer">
+  Final Year Major Project
+</footer>
+
 <script>
+  window.onload = function() {
+
+  const imageData = localStorage.getItem("selectedImage");
+
+  if (imageData) {
+    document.getElementById("showImage").src = imageData;
+  }
+
   document.getElementById("crop").innerText = localStorage.getItem("crop");
   document.getElementById("disease").innerText = localStorage.getItem("disease");
   document.getElementById("solution").innerText = localStorage.getItem("solution");
+};
+
+  function goHome() {
+    window.location.href = "home.html";
+  }
 </script>
 
 </body>
